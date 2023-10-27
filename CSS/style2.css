@@ -1,0 +1,30 @@
+/****** General ***********/
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+}
+
+.reservation {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.fonctionnement ul {
+  list-style-type: none;
+}
+.fonctionnement ul li {
+  background-color: #F6F6F6;
+  border-radius: 20px;
+}/*# sourceMappingURL=style.css.map */
