@@ -9,29 +9,6 @@
     justify-content: center;
 }
 
-header{
-    @include flexcenter;
-
-}
-.location{
-    @include flexcenter;
-
-}
-
-.reservation{
-    @include flexcenter;
-    flex-direction: column;
-    text-align: center;
-}
-
-.fonctionnement{
-    ul{
-        list-style-type: none;
-
-        li{
-            background-color: #F6F6F6;
-            border-radius: 20px;
-        }
-    }
-  
+header img {
+    padding: 22px 13px 13px 13px;
 }

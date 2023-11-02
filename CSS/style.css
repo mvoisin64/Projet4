@@ -14,7 +14,8 @@ header {
 }
 
 header img {
-  padding: 13px;
+  padding: 20px 13px 13px 13px;
+
 }
 
 .location {
@@ -88,6 +89,7 @@ header img {
   border-radius: 100%;
   width: 17px;
   height: 17px;
+  font-size: 13px;
 }
 
 .restaurants {
