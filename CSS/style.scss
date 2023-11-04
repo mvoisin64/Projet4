@@ -16,7 +16,6 @@ body {
 header {
     @include flexcenter;
 
-
 }
 
 header img {
@@ -99,6 +98,7 @@ header img {
                 border-radius: 100%;
                 width: 17px;
                 height: 17px;
+                font-size: 12px;
             }
         }
     }

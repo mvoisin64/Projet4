@@ -88,6 +88,7 @@ header img {
   border-radius: 100%;
   width: 17px;
   height: 17px;
+  font-size: 12px;
 }
 
 .restaurants {
@@ -141,9 +142,6 @@ header img {
 }
 .restaurants .card .card-content i {
   margin-right: 20px;
-}
-.restaurants .card .card-content .card-subtitle {
-  margin-top: 0px;
 }
 
 footer {

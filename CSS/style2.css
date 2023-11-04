@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 header {
   display: flex;
   justify-content: center;
@@ -28,5 +27,4 @@ header {
 .fonctionnement ul li {
   background-color: #F6F6F6;
   border-radius: 20px;
-}/*# sourceMappingURL=style.css.map */
-
+}/*# sourceMappingURL=style2.css.map */
