@@ -180,6 +180,52 @@ footer ul li {
 
 /****** Media queries ***********/
 /*  tablet (less/equal than 1024px) */
+@media (min-width: 640px) {
+  .reservation button {
+    width: 30%;
+  }
+  .fonctionnement h2 {
+    margin-left: 40px;
+  }
+  .fonctionnement ul li {
+    width: 56%;
+  }
+  .restaurants h2 {
+    padding-top: 20px;
+    margin-left: 40px;
+  }
+  .restaurants .card {
+    width: 76%;
+  }
+  .restaurants .card .card-content .cardtext {
+    padding-left: 20px;
+  }
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+  }
+  footer h4 {
+    padding: 0;
+    margin-right: 30px;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+  footer ul .footerbloc {
+    margin-right: 40px;
+  }
+  footer ul li {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
 /****** Media queries ***********/
 /*  desktop (less/equal than 1024px) */
 @media (min-width: 1024px) {

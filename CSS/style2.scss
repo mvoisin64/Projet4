@@ -196,6 +196,62 @@ footer {
     }
 }
 
+
+/****** Media queries ***********/
+/*  tablet (max/equal than 640px) */
+@media (min-width: 640px) {
+
+.imgresto{
+    img{
+        object-fit: cover;
+    }
+}
+
+.menu{
+    h2{
+        margin-top: 30px;
+    }
+}
+
+
+button{
+    width: 25%;
+}
+
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding-top: 60px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+
+        h4 {
+            padding: 0;
+            margin-right: 30px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            padding: 0;
+
+            .footerbloc {
+                margin-right: 40px;
+            }
+
+            li {
+                margin-right: 20px;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+
+
+}
+
 /****** Media queries ***********/
 /*  desktop (less/equal than 1024px) */
 @media (min-width: 1024px) {
