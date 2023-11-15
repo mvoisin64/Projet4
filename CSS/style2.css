@@ -5,7 +5,8 @@
 }
 
 body {
-  margin: 0px;
+  margin: 0px auto;
+  max-width: 1400px;
 }
 
 a {
@@ -62,13 +63,14 @@ h1 {
   background-color: #F6F6F6;
   border-radius: 30px 30px 0px 0px;
   position: relative;
-  top: -60px;
+  margin-top: -60px;
 }
 .menu header i {
   font-size: 20px;
 }
 .menu section {
-  width: 90%;
+  width: 95%;
+  margin: auto;
 }
 .menu section hr {
   width: 40px;
@@ -109,11 +111,11 @@ article {
   align-items: flex-end;
   color: black;
   text-decoration: none;
-  width: 105%;
-  margin-left: 10px;
+  width: 100%;
   background-color: white;
   border-radius: 20px;
   margin-bottom: 10px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
 }
 
 .commander {
@@ -131,6 +133,7 @@ button {
   width: 50%;
   margin-bottom: 40px;
   margin-top: 40px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
 footer {
@@ -160,4 +163,61 @@ footer ul {
 }
 footer ul li {
   margin-bottom: 10px;
+}
+
+/****** Media queries ***********/
+/*  desktop (less/equal than 1024px) */
+@media (min-width: 1024px) {
+  .imgresto img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 500px;
+  }
+  .menu {
+    margin-left: 140px;
+    width: 80%;
+  }
+  .menu #headerbas {
+    padding: 30px;
+  }
+  .menu section {
+    margin-left: 250px;
+    margin-bottom: 50px;
+  }
+  .menu article {
+    width: 60%;
+  }
+  .menu button {
+    width: 16%;
+    margin-top: 0;
+  }
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+  }
+  footer h4 {
+    padding: 0px;
+    margin: 0px;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+  footer ul .footerbloc {
+    margin-right: 100px;
+  }
+  footer ul li {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
+/* Small devices (phones, less than 768px) */
+@media (min-width: 767.98px) {
+  /* ... */
 }/*# sourceMappingURL=style2.css.map */
