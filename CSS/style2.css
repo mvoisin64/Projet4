@@ -206,7 +206,7 @@ footer ul li {
 }
 /****** Media queries ***********/
 /*  desktop (less/equal than 1024px) */
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .imgresto img {
     -o-object-fit: cover;
        object-fit: cover;

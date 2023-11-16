@@ -13,14 +13,17 @@ body {
 @mixin flexcenter {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
+
+$main-color: #F6F6F6;
+
 
 header {
     @include flexcenter;
-}
-
-header img {
-    padding: 13px;
+    img{
+        padding: 13px;
+    }
 }
 
 .location {
@@ -37,7 +40,6 @@ header img {
 .reservation {
     @include flexcenter;
     flex-direction: column;
-    align-items: center;
     text-align: center;
 
     h1 {
@@ -58,8 +60,6 @@ header img {
         border: none;
         width: 60%;
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-
-
     }
 }
 
@@ -70,14 +70,12 @@ header img {
 
     ul {
         list-style-type: none;
-        display: flex;
-        flex-direction: column;
         @include flexcenter;
-        align-items: center;
+        flex-direction: column;
         padding: 0px;
 
         li {
-            background-color: #F6F6F6;
+            background-color: $main-color;
             border-radius: 20px;
             padding: 20px;
             margin-bottom: 10px;
@@ -94,9 +92,7 @@ header img {
                 top: 50%;
                 transform: translate(-50%, -50%);
                 left: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flexcenter;
                 color: white;
                 background-color: #9356DC;
                 border-radius: 100%;
@@ -110,7 +106,7 @@ header img {
 }
 
 .restaurants {
-    background-color: #F6F6F6;
+    background-color: $main-color;
     padding-bottom: 15px;
 
     h2 {
@@ -127,7 +123,6 @@ header img {
     .card {
         @include flexcenter;
         flex-direction: column;
-        align-items: center;
         margin: auto;
         margin-bottom: 20px;
         position: relative;
@@ -287,14 +282,14 @@ footer {
 
 /****** Media queries ***********/
 /*  desktop (less/equal than 1024px) */
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
 
     header img {
         padding: 30px;
     }
 
     .reservation {
-        background-color: #F6F6F6;
+        background-color: $main-color;
         padding-bottom: 25px;
 
         button {
