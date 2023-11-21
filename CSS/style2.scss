@@ -46,6 +46,7 @@ header#headerhaut {
             top: 50%;
             left: 10px;
             transform: translateY(-50%);
+
         }
     }
 }
@@ -53,8 +54,24 @@ header#headerhaut {
 header#headerbas {
     @include flexcenter;
 
-    i {
+    div {
+        position: relative;
         margin-right: 40px;
+    }
+
+    .coeur1 {
+        position: absolute;
+        left: 0;
+        opacity: 0;
+        transition: opacity 1s;
+        background: linear-gradient(#9356DC, #FF79DA);
+        background-clip: text;
+        color: transparent;
+
+        &:hover {
+        
+            opacity: 1;
+        }
     }
 }
 
@@ -201,22 +218,22 @@ footer {
 /*  tablet (max/equal than 640px) */
 @media (min-width: 640px) {
 
-.imgresto{
-    img{
-        object-fit: cover;
+    .imgresto {
+        img {
+            object-fit: cover;
+        }
     }
-}
 
-.menu{
-    h2{
-        margin-top: 30px;
+    .menu {
+        h2 {
+            margin-top: 30px;
+        }
     }
-}
 
 
-button{
-    width: 25%;
-}
+    button {
+        width: 25%;
+    }
 
     footer {
         display: flex;
@@ -279,7 +296,8 @@ button{
         article {
             width: 60%;
         }
-        button{
+
+        button {
             width: 16%;
             margin-top: 0;
         }

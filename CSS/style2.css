@@ -45,8 +45,22 @@ header#headerbas {
   justify-content: center;
   align-items: center;
 }
-header#headerbas i {
+header#headerbas div {
+  position: relative;
   margin-right: 40px;
+}
+header#headerbas .coeur1 {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s;
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+header#headerbas .coeur1:hover {
+  opacity: 1;
 }
 
 h1 {
