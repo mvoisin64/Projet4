@@ -4,6 +4,35 @@
     box-sizing: border-box;
 }
 
+.entrees {
+    animation: progression 1000ms;
+}
+
+
+.plats {
+    animation: progression 1000ms 1000ms;
+}
+
+.desserts {
+    animation: progression 1000ms 1200ms;
+}
+
+
+
+
+@keyframes progression {
+
+    0%,
+    70% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+
+}
+
 @mixin flexcenter {
     display: flex;
     justify-content: center;
@@ -69,13 +98,10 @@ header#headerbas {
         color: transparent;
 
         &:hover {
-        
             opacity: 1;
         }
     }
 }
-
-
 
 
 h1 {
@@ -97,6 +123,25 @@ h1 {
     margin-top: -60px;
 
 
+    a {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        color: black;
+        text-decoration: none;
+        width: 100%;
+        background-color: white;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+        overflow: hidden;
+
+        &:hover .check{
+            transform: translateX(0);
+            
+        }
+   
+    }
 
     header {
         i {
@@ -107,6 +152,8 @@ h1 {
     section {
         width: 95%;
         margin: auto;
+
+
 
         hr {
             width: 40px;
@@ -145,21 +192,28 @@ h1 {
             margin-right: 15px;
             font-weight: bold;
         }
+
+        .check {
+            height: 80px;
+            width: 80px;
+            background-color: #99E2D0;
+            border-radius: 0px 20px 20px 0px;
+            transform: translateX(80px);
+            transition: transform 2000ms ;
+            
+            i {
+                position: absolute;
+                transform: translate(32px, 32px);
+                font-size: 17px;
+                color: white;
+            }
+        }
     }
 }
 
-article {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    color: black;
-    text-decoration: none;
-    width: 100%;
-    background-color: white;
-    border-radius: 20px;
-    margin-bottom: 10px;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
-}
+
+
+
 
 .commander {
     display: flex;
@@ -177,6 +231,13 @@ button {
     margin-bottom: 40px;
     margin-top: 40px;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    opacity: 1;
+    transition: opacity 450ms, box-shadow 450ms;
+
+    &:hover {
+        opacity: 0.8;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 1);
+    }
 
 }
 

@@ -4,6 +4,26 @@
   box-sizing: border-box;
 }
 
+.entrees {
+  animation: progression 1000ms;
+}
+
+.plats {
+  animation: progression 1000ms 1000ms;
+}
+
+.desserts {
+  animation: progression 1000ms 1200ms;
+}
+
+@keyframes progression {
+  0%, 70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 body {
   margin: 0px auto;
   max-width: 1400px;
@@ -79,6 +99,22 @@ h1 {
   position: relative;
   margin-top: -60px;
 }
+.menu a {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: black;
+  text-decoration: none;
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+.menu a:hover .check {
+  transform: translateX(0);
+}
 .menu header i {
   font-size: 20px;
 }
@@ -118,18 +154,19 @@ h1 {
   margin-right: 15px;
   font-weight: bold;
 }
-
-article {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  color: black;
-  text-decoration: none;
-  width: 100%;
-  background-color: white;
-  border-radius: 20px;
-  margin-bottom: 10px;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+.menu section .check {
+  height: 80px;
+  width: 80px;
+  background-color: #99E2D0;
+  border-radius: 0px 20px 20px 0px;
+  transform: translateX(80px);
+  transition: transform 2000ms;
+}
+.menu section .check i {
+  position: absolute;
+  transform: translate(32px, 32px);
+  font-size: 17px;
+  color: white;
 }
 
 .commander {
@@ -148,6 +185,12 @@ button {
   margin-bottom: 40px;
   margin-top: 40px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  opacity: 1;
+  transition: opacity 450ms, box-shadow 450ms;
+}
+button:hover {
+  opacity: 0.8;
+  box-shadow: 0px 4px 10px 0px rgb(0, 0, 0);
 }
 
 footer {
