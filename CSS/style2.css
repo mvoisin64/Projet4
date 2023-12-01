@@ -98,10 +98,11 @@ h1 {
   border-radius: 30px 30px 0px 0px;
   position: relative;
   margin-top: -60px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .menu a {
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
   color: black;
   text-decoration: none;
@@ -111,9 +112,21 @@ h1 {
   margin-bottom: 10px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
   overflow: hidden;
+  transition: text-overflow 200ms 200ms;
 }
 .menu a:hover .check {
   transform: translateX(0);
+}
+.menu a:hover .menuprix {
+  transform: translateX(0);
+}
+.menu a:hover .menutitle p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu a:hover .menutitle h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu header i {
   font-size: 20px;
@@ -149,10 +162,15 @@ h1 {
 }
 .menu section .menutitle {
   margin-left: 10px;
+  margin-right: auto;
+  white-space: nowrap;
+  width: 220px;
 }
 .menu section .menuprix {
   margin-right: 15px;
   font-weight: bold;
+  transform: translateX(80px);
+  transition: transform 0.4s ease-in-out;
 }
 .menu section .check {
   height: 80px;
@@ -160,7 +178,7 @@ h1 {
   background-color: #99E2D0;
   border-radius: 0px 20px 20px 0px;
   transform: translateX(80px);
-  transition: transform 2000ms;
+  transition: transform 0.4s ease-in-out;
 }
 .menu section .check i {
   position: absolute;
@@ -187,6 +205,7 @@ button {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   opacity: 1;
   transition: opacity 450ms, box-shadow 450ms;
+  cursor: pointer;
 }
 button:hover {
   opacity: 0.8;
@@ -270,18 +289,16 @@ footer ul li {
     height: 500px;
   }
   .menu {
-    margin-left: 140px;
     width: 80%;
   }
   .menu #headerbas {
     padding: 30px;
   }
   .menu section {
-    margin-left: 250px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 50px;
-  }
-  .menu article {
-    width: 60%;
+    width: 65%;
   }
   .menu button {
     width: 16%;
