@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-header, main, footer {
-  animation: coreappear 3000ms;
-}
-
 @keyframes coreappear {
   0%, 50% {
     opacity: 0;
@@ -25,6 +21,20 @@ header, main, footer {
     opacity: 0;
   }
 }
+header, main, footer {
+  animation: coreappear 3000ms;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  margin: 0px auto;
+  max-width: 1400px;
+}
+
 .load {
   pointer-events: none;
   max-width: 1440px;
@@ -38,7 +48,7 @@ header, main, footer {
 }
 .load__bar {
   margin: 0 10px;
-  background-color: #15DEA5;
+  background-color: #9356DC;
   height: 100px;
   width: 3vh;
   animation: bars 1500ms forwards ease-in-out alternate;
@@ -57,16 +67,6 @@ header, main, footer {
 }
 .load__bar--5 {
   animation-delay: 1500ms;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-body {
-  margin: 0px auto;
-  max-width: 1400px;
 }
 
 header {
@@ -141,6 +141,9 @@ header img {
   position: relative;
   width: 70%;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+.fonctionnement ul li:hover i {
+  color: #9356DC;
 }
 .fonctionnement ul li i {
   margin-right: 15px;

@@ -4,18 +4,6 @@
   box-sizing: border-box;
 }
 
-.entrees {
-  animation: progression 1000ms;
-}
-
-.plats {
-  animation: progression 1000ms 1000ms;
-}
-
-.desserts {
-  animation: progression 1000ms 1200ms;
-}
-
 @keyframes progression {
   0%, 70% {
     opacity: 0;
@@ -31,6 +19,18 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.entrees {
+  animation: progression 1000ms;
+}
+
+.plats {
+  animation: progression 1000ms 1000ms;
+}
+
+.desserts {
+  animation: progression 1000ms 1200ms;
 }
 
 header {
@@ -112,7 +112,6 @@ h1 {
   margin-bottom: 10px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
   overflow: hidden;
-  transition: text-overflow 200ms 200ms;
 }
 .menu a:hover .check {
   transform: translateX(0);
@@ -251,6 +250,15 @@ footer ul li {
   .menu h2 {
     margin-top: 30px;
   }
+  .menu section {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    width: 65%;
+  }
+  .menu section .menutitle {
+    width: auto;
+  }
   button {
     width: 25%;
   }
@@ -299,6 +307,9 @@ footer ul li {
     margin-right: auto;
     margin-bottom: 50px;
     width: 65%;
+  }
+  .menu section .menutitle {
+    width: auto;
   }
   .menu button {
     width: 16%;

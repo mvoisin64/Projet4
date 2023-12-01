@@ -4,24 +4,7 @@
     box-sizing: border-box;
 }
 
-.entrees {
-    animation: progression 1000ms;
-}
-
-
-.plats {
-    animation: progression 1000ms 1000ms;
-}
-
-.desserts {
-    animation: progression 1000ms 1200ms;
-}
-
-
-
-
 @keyframes progression {
-
     0%,
     70% {
         opacity: 0
@@ -30,7 +13,6 @@
     100% {
         opacity: 1
     }
-
 }
 
 @mixin flexcenter {
@@ -48,7 +30,16 @@ a {
     text-decoration: none;
 }
 
+.entrees {
+    animation: progression 1000ms;
+}
+.plats {
+    animation: progression 1000ms 1000ms;
+}
 
+.desserts {
+    animation: progression 1000ms 1200ms;
+}
 
 header {
     @include flexcenter;
@@ -57,7 +48,6 @@ header {
         margin-right: 30px;
     }
 }
-
 
 header#headerhaut {
     @include flexcenter;
@@ -136,7 +126,7 @@ h1 {
         margin-bottom: 10px;
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
         overflow: hidden;
-        transition: text-overflow 200ms 200ms;
+       
 
         &:hover .check {
             transform: translateX(0);
@@ -151,16 +141,17 @@ h1 {
         &:hover .menutitle p {
             overflow: hidden;
             text-overflow: ellipsis;
+
+
             
+
         }
-
-
         &:hover .menutitle h3 {
             overflow: hidden;
             text-overflow: ellipsis;
         }
-   
-   
+
+
 
     }
 
@@ -173,9 +164,6 @@ h1 {
     section {
         width: 95%;
         margin: auto;
-
-
-
         hr {
             width: 40px;
             background-color: #99E2D0;
@@ -210,8 +198,6 @@ h1 {
             margin-right: auto;
             white-space: nowrap;
             width: 220px;
-    
-      
         }
 
         .menuprix {
@@ -318,6 +304,17 @@ footer {
         h2 {
             margin-top: 30px;
         }
+
+        section {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+            width: 65%;
+
+            .menutitle {
+                width: auto;
+            }
+        }
     }
 
 
@@ -382,7 +379,12 @@ footer {
             margin-right: auto;
             margin-bottom: 50px;
             width: 65%;
+
+            .menutitle {
+                width: auto;
+            }
         }
+
         button {
             width: 16%;
             margin-top: 0;
